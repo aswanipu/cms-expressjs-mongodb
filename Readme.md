@@ -23,7 +23,7 @@ Follow these steps to set up the project locally:
 
  **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/cms-expressjs-mongodb.git
+   git clone https://github.com/aswanipu/cms-expressjs-mongodb.git
    cd cms-expressjs-mongodb
 
 1. To Run : npm start server
