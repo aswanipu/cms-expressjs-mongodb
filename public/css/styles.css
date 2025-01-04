@@ -1,0 +1,348 @@
+
+
+/* Student Name : Aswani Pottathuparambil Unnikrishnan
+Student ID : 8858117  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+.main-container{
+    min-height: 400px;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #b18c96;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    
+}
+
+header .logo img {
+    
+    width: 100px;
+    height: 50px;
+    margin-top: 20%;
+    
+}
+
+header .tagline {
+    color: #300429;
+    font-family: cursive;
+    
+}
+
+header username-header{
+    text-align: right;
+}
+
+nav{
+    background-color: #eee4f1;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav > ul> li{
+    display: inline-block;
+    position: relative;
+    color: #280d0d;
+    padding: 10px 30px; 
+    font-weight: bold;
+}
+nav ul li a {
+    color: #280d0d;
+    text-decoration: none;
+    padding: 10px 15px; 
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #990909;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav .nav-logout{
+    color: #b7058d;
+    font-style: italic;
+}
+p{
+    line-height: 1.6;
+}
+
+footer{
+    border-top: 1px solid black;
+}
+
+.footer-copyright {
+    background-color: #E4DEE4;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+   
+}
+
+.footer-copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.table-section {
+    padding: 20px 0;
+    margin: 0 30px 30px 30px;
+   
+}
+
+.table-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-section th, .table-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #D0B5D9;
+}
+.table-section td{
+    line-height: 1.8;
+}
+.table-section table tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+.form-section {
+    
+    margin: 0 30px 30px 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid rgba(241, 235, 238, 0.788);
+    border-radius: 10px;
+}
+
+
+.form-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(83, 5, 44, 0.788);
+}
+
+.table-section {
+    padding: 20px 0;
+    margin: 0 30px 30px 30px;
+   
+}
+
+.table-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-section th, .table-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #D0B5D9;
+}
+.table-section td{
+    line-height: 1.8;
+}
+.table-section table tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+.content-editor{
+    height: 300px;
+}
+/* styles */
+.form-outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    margin-top: 10px;
+    
+  }
+  
+  .form-container {
+    margin-right: 20px;
+    margin: 0 30px 30px 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid rgba(241, 235, 238, 0.788);
+    border-radius: 10px;
+  }
+  
+  .error-container {
+    color: red;
+    font-size: 14px;
+    margin: 0 30px 30px 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid rgba(241, 235, 238, 0.788);
+    border-radius: 10px;
+  }
+  .result-container{
+    margin: 10px 30px 30px 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid rgba(241, 235, 238, 0.788);
+    border-radius: 10px;
+    min-height: 350px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
+
+  .form-group {
+    margin: 30px;
+}
+
+.form-group label{
+    margin: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"]{
+    width: 55%;
+    padding: 8px;
+}
+.login-button{
+    width: 95%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #D0B5D9;
+    color: #280d0d;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-button:hover{
+    background-color: #d3a6e2;
+}
+
+/* Add Page */
+
+  
+  .form-container h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .add-page-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; 
+  }
+  
+  .add-page-table td {
+    padding: 10px;
+    vertical-align: middle; 
+  }
+  
+  .add-page-table label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .add-page-table input[type="text"],
+  .add-page-table input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+  }
+  
+  .add-page-table .content-editor {
+    min-height: 200px;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .add-page-table input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4b0303;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-page-table input[type="submit"]:hover {
+    background-color: #530c0c;
+  }
+  
+  .add-page-table tr td:first-child {
+    width: 30%; 
+    padding-right: 10px;
+  }
+  
+  .add-page-table tr td:last-child {
+    width: 70%; 
+  }
+
+
+/* Index page*/
+.hero img {
+    width: 100%;
+    height: 200px;
+    
+}
+
+.intro-container {
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+
+
+
+  
+  

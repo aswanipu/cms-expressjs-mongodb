@@ -1,0 +1,91 @@
+
+
+<!-- Add header Partial Layout-->
+<%- include('layouts/header'); -%>
+<!-- Add nav Partial Layout-->
+<%- include('layouts/nav'); -%>
+
+<!-- To show success  message-->
+<% if (typeof(msg) !== 'undefined' ) { %>
+    <section class="result-container">
+        <div>
+            <h2>You have successfully created a new Page!</h2>
+        </div>
+        
+    </section>
+<% } else { %>
+
+<div class="form-outer-container ">
+
+    <section class="form-container">
+        <h2>Edit Page</h2>
+        <form action="/edit-page/<%= page._id %>" method="post" encType="multipart/form-data">
+            <table class="add-page-table">
+                <tr>
+                    <td><label for="title">Page Title</label></td>
+                    <td colspan="2"><input type="text" id="title" name="title" value="<%= page.title %>"></td>
+                    
+                </tr>
+              
+                <tr>
+                    <td><label for="heroimage">Hero Image</label></td>
+                    <td><input type="file"  name="heroImage">
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <% if (page.heroImage) { %>
+                            <p>Current Image: <img src="<%- page.heroImage %>" alt="Current Hero Image" width="100"></p>
+                        <% } %>
+
+                    </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><div  id="contentEditor" class="content-editor">
+                    <%- page.content %>
+
+                  </div></td>  
+                      
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Update Page"></td>
+                    
+                </tr>
+            </table>
+            
+            <input type="hidden" id="content" name="content">
+        </form>
+
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+        <script>
+            var quill = new Quill('#contentEditor', {
+                theme: 'snow'
+            });
+            document.querySelector('form').onsubmit = function() {
+                document.querySelector('#content').value = quill.root.innerHTML;
+            };
+        </script>
+
+        <a href="/manage">Back to List</a>
+    </section>
+    
+    <!-- To show validation error message -->
+    <% if (typeof(errorsArray) !== 'undefined' ) { %>
+        <section class="error-container">
+            <h4>Error Notification</h4>
+            <div>
+                <% for (let error of errorsArray) { %>
+                    <p><%= error.msg %></p>
+                <% } %>
+            </div>
+        </section>
+    <% } %>
+
+</div>
+
+<% } %>
+
+
+
+<!-- Add header Partial Layout-->
+<%- include('layouts/footer'); -%>

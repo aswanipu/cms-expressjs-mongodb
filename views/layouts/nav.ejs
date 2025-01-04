@@ -1,0 +1,31 @@
+<nav>
+    <ul>
+        <% if (typeof isAdmin !== 'undefined') { %>
+            <% if (isAdmin) { %>
+                <li><a href="/add">Add Page</a></li>
+                <li><a href="/manage">Edit Page</a></li>
+                <li><a href="/logout" class="nav-logout">Logout</a></li>
+            <% } else { %>
+                <% if (typeof pages !== 'undefined') { %>  
+                    <% pages.forEach(page => { %>
+                        <li><a href="/page/<%= page.slug %>"><%= page.title %></a></li>
+                    <% }) %>
+                <% } %>
+                   
+
+            <% } %>
+        <% } else { %>
+            
+                <% if (typeof pages !== 'undefined') { %>  
+                    <% pages.forEach(page => { %>
+                        <li><a href="/page/<%= page.slug %>"><%= page.title %></a></li>
+                    <% }) %>
+                <% } %>
+            <% } %>
+        
+        
+ 
+    </ul>
+       
+</nav>
+<div class="main-container">

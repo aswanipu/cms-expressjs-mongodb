@@ -1,0 +1,31 @@
+<!-- Add header Partial Layout-->
+<%- include('layouts/header'); -%>
+<!-- Add nav Partial Layout-->
+<%- include('layouts/nav'); -%>
+
+
+<div>
+   
+
+        <% if (selectedPage) { %>
+            <section class="hero">
+                <img src="<%= selectedPage.heroImage %>" alt="<%= selectedPage.title %>" />
+            </section>
+    
+            <section class="intro-container">
+                <h1><%= selectedPage.title %></h1>
+                <p><%- selectedPage.content %></p>
+            </section>
+
+        <% } else { %>
+            <div class="result-container">
+                <h1>Welcome!</h1>
+
+            </div>
+            
+
+        <% } %>
+   
+</div>
+ <!-- Add header Partial Layout -->
+ <%- include('layouts/footer'); -%>

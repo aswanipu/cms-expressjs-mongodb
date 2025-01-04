@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+
+const pageInfo = mongoose.model('PageInfo', {
+    "title":String,
+    "slug": String,
+    "heroImage": String,
+    "content": String,
+    
+});
+
+module.exports = pageInfo;

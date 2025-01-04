@@ -1,0 +1,25 @@
+{
+  "name": "content_management_system",
+  "version": "1.0.0",
+  "description": "This cms allow to add blogs and view the blogs. This website created using html,css,js, Node.js nad mongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "express",
+    "MongoDB"
+  ],
+  "author": "Aswani Unnikrishnan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.1",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "mongoose": "^8.5.2"
+  }
+}
